@@ -1,0 +1,13 @@
+.nav-bar{
+    background-color:white;
+    padding:10px;
+}
+
+.nav-bar-elements{
+    border-collapse: separate;
+    border-spacing: 20px 0;
+}
+
+.nav-bar-hd {
+    padding: 5px 0;
+  }
