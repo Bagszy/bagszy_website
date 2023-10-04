@@ -1,33 +1,108 @@
 .nav-bar{
     padding:10px;
+    max-width: 1150px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: auto;
 }
 
-.nav-bar-elements{
-    background-color: lightblue;
-    border-collapse: separate;
-    border-spacing: 30px 0;
-    border: solid 2px;
-    max-width: 200px;
-    padding-left: 1px;
-}
-
-.nav-bar-hd {
-    padding: 5px 0px;
-}
-
-a.nav-bar-hd {
-    text-decoration: underline solid transparent;
-    width: 100px;
-    color: black;
-    display: inline-block;
-    margin: 5px auto;
+.nav-item{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    line-height: 45px;
+    font-family: monospace;
     font-size: 35px;
-    padding-right: 25px;
-    
+    padding: 25px;
+    font-size: 50px;
 }
 
-a.nav-bar-hd:hover{
-    
-    transition: text-decoration 1s ease;
-    text-decoration: underline solid currentColor;
+a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.flex{
+    display: flex;
+}
+
+.nav-item:hover{
+    font-size: 45px;
+    font-weight: bold;
+    color:  blue;
+    cursor: pointer;
+}
+
+.border-right {
+    border-right: 1px solid black;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(132deg,#000000, #63e8ff,#5da6a5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.gamebody{
+    position: relative;
+    width: 50vw;
+    height: 60vh;
+    margin: auto;
+    top: 10vh;
+    background-color: white;
+    align-items: center;
+    z-index: 0;
+}
+
+.clickerbox{
+    position: absolute;
+    margin: auto 0;
+    left: 33%;
+    top: 16%;
+    height: 35vh;
+    border-radius: 50%;
+}
+
+.clickerbox:hover{
+    height: 37vh;
+    top: 15%;
+    left: 32%;
+    cursor: pointer;
+}
+
+#cookie-text{
+    font: arial;
+    font-size: 3vh;
+    padding: 15px;
+    margin: auto 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.right-side-bar{
+    position: absolute;
+    margin: auto;
+    background-color: gray;
+    width: 10vw;
+    top: 0px;
+    height: 32vw;
+    left: 40vw;
+}
+
+.left-side-bar{
+    position: absolute;
+    margin: auto;
+    background-color: gray;
+    width: 10vw;
+    top: 0px;
+    height: 32vw;
+    right: 40vw;
+    z-index: auto;
 }

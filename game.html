@@ -3,25 +3,33 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="utf-8">
-        <meta name="description" content="A website that was made by Bagszy">
+        <meta name="description" content="A CookieClicker Like JavaScript game made by scratch">
         <meta name="keywords" content="Development, HTML, CSS, JavaScript, Learning">
         <meta name="author" content="Bagszy">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <!-- Other Useful Stuff -->
-        <title>Welcome | Bagszys Website</title>
+        <title>Bagszy-Clicker</title>
         <link rel="stylesheet" href="./styles.css">
-        <!-- <script src="./scripts/javascript.js"></script> Defines the scripts I am going to use later. -->
-    </head>
+        <script src="./scripts/cookieclicker.js"></script>
     <body>
         <div>
             <ul class="flex nav-bar">
                 <a class="border-right nav-item" href="index.html"> <li>Home</li></a>
                 <a class="border-right nav-item" href="https://www.linkedin.com/in/mindaugas-z-121122218/"><li>LinkedIn</li></a>
                 <a class="border-right nav-item" href="https://www.youtube.com/channel/UClQWTu2marnJvbZ3GbjzG-Q">  <li>YouTube</li></a>
-                <a class="border-right nav-item" href="https://discord.com/invite/vvnq2fUBnw">  <li>Discord</li></a>
+                <a class="border-right nav-item" href="https://discord.com/invite/vvnq2fUBnw" > <li>Discord</li></a>
                 <a class="border-right nav-item" href="https://www.twitch.tv/bagszy_">  <li>Twitch</li></a>
                 <a class="nav-item" href="game.html">  <li>Game</li></a>
             </ul>
+        </div>
+
+        <div class="gamebody">
+            <div class="flex clickerbox" id="clickerbox">
+                <img src="./images/cookie.png" id="cookie" alt="cookie" onclick="cookieClick()" onmousedown="cookieSmaller()" onmouseup="cookieBigger()"></img>
+            </div>
+            <div id="cookie-text">Cookies:</div>
+            <div class="right-side-bar"></div>
+            <div class="left-side-bar"></div>
         </div>
     </body>
 </html>
